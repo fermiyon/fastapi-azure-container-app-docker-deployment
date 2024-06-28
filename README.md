@@ -38,3 +38,4 @@ az group delete --name web-fastapi-aca-rg
 
 * [FastAPI Docker docs](https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker)
 * [Microsoft Learn](https://learn.microsoft.com/en-us/azure/developer/python/tutorial-containerize-simple-web-app?tabs=web-app-fastapi)
+* Duke University - Virtualization, Docker, and Kubernetes for Data Engineering program
