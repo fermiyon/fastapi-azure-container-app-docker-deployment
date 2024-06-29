@@ -1,6 +1,10 @@
 # Azure Docker Deployment
 
-Deploy docker container to Azure Container Apps
+## Overview
+
+This project contains the necessary files and instructions to deploy a FastAPI application as a Docker container to Azure Container Apps.
+
+## Getting Started
 
 ## Login
 
@@ -10,7 +14,9 @@ az login
 
 ## Build and run image locally
 
-### Build the image
+### Build the Docker Image
+
+To build the Docker image for the FastAPI demo, run the following command:
 
 ```bash
 docker build --tag fastapi-demo .
@@ -22,17 +28,28 @@ docker build --tag fastapi-demo .
 docker run --detach --publish 3100:3100 fastapi-demo
 ```
 
-## Deploy web app to Azure
+### Deploy to Azure Container Apps
+
+Deploy the containerized application to Azure Container Apps using the following command:
 
 ```bash
 az containerapp up --resource-group web-fastapi-aca-rg --name web-aca-app --ingress external --target-port 3100 --source .
 ```
+
+- **Resource Group**: Specify the resource group where your Azure Container Apps will reside.
+- **Ingress**: Set to 'external' to allow external access to the application.
+- **Target Port**: The port that the application will listen on.
 
 ## Cleanup
 
 ```bash
 az group delete --name web-fastapi-aca-rg
 ```
+
+## Requirements
+
+- Azure CLI
+- Docker
   
 ## References
 
