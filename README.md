@@ -1,4 +1,5 @@
 ![Static Badge](https://img.shields.io/badge/Azure%20CLI-007FFF)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?logo=docker&logoColor=white)
 
 By Selman Karaosmanoglu 
 
